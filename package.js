@@ -1,14 +1,16 @@
 Package.describe({
   name: 'jeanfredrik:match-mongo',
   version: '0.0.1',
-  summary: 'Match an object against a mongo selector using check() and Meteor.match()',
-  // URL to the Git repository containing the source code for this package.
-  git: '',
+  summary: 'Match an object against a mongo selector using check() and Match.test()',
+  git: 'https://github.com/jeanfredrik/meteor-match-mongo.git',
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.2');
+  api.versionsFrom('1.0');
+  api.use('minimongo');
+  api.use('check');
+  api.use('mongo', {weak: true});
   api.addFiles('match-mongo.js');
 });
 
