@@ -1,6 +1,6 @@
 Package.describe({
   name: 'jeanfredrik:match-mongo',
-  version: '0.0.1',
+  version: '0.1.0',
   summary: 'Match an object against a mongo selector using check() and Match.test()',
   git: 'https://github.com/jeanfredrik/meteor-match-mongo.git',
   documentation: 'README.md'
